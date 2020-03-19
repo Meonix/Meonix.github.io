@@ -1,1 +1,53 @@
-hello world
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Mionix</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<main>
+		<form>
+			<label for= "userID">User ID</label><br>
+			<input type="text" name="userID" id="userId"><br>
+			<label for= "firstName">First Name</label><br>
+			<input type="text" name="firstName" id="firstName"><br>
+			<label for= "lastName">Last Name</label><br>
+			<input type="text" name="lastName" id="lastName"><br>
+			<button id="btAdd" class="btn waves-effect waves-light">Add</button>
+			<button id="btUpDate" class="btn waves-effect waves-light">Update</button>
+			<button id="btRemove" class="btn waves-effect red darken-1">Remove</button>
+		</form>
+		<a href="sell.html" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+	</main>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBl8HiGQATex_vVrrGRK0aQflYBOyRPOOY",
+    authDomain: "testing-eeaf7.firebaseapp.com",
+    databaseURL: "https://testing-eeaf7.firebaseio.com",
+    projectId: "testing-eeaf7",
+    storageBucket: "testing-eeaf7.appspot.com",
+    messagingSenderId: "29386815622",
+    appId: "1:29386815622:web:802371a817dc12b21db907",
+    measurementId: "G-VWB7FL8T1Q"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+	<script src="./functions.js"></script>
+
+
+</body>
+</html>
